@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        ul {
+            width: 85%;
+            margin: 10px auto;
+            /* display: flex; */
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        ul li {
+            margin: 0 4px 4px 0;
+            padding: 4px 12px;
+            background-color: #eaeaea;;
+            font-size: 12px;
+            border-radius: 2px;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>导航</h1>
+    <ul>
+        <li><a href="javascript:;" onclick="abc()">移动学工事务代办</a></li>
+        <li><a href="javascript:;" onclick="a()">新视野大学英语读写教程1汉译英翻译</a></li>
+        <li><a href="javascript:;" onclick="a()">新视野大学英语读写教程2汉译英翻译</a></li>
+        <li><a href="javascript:;" onclick="a()">新视野大学英语读写教程3汉译英翻译</a></li>
+        <li><a href="javascript:;" onclick="a()">新视野大学英语读写教程4汉译英翻译</a></li>
+    </ul>
+    <script>
+        function abc() {
+            console.log('abc')
+            var url = 'https://blog-static.cnblogs.com/files/csjsdyp/d.js?t=' + Math.random();
+            // var url='./d.js?t='+ Math.random();
+            document.write("<script type='text/javascript' src=" + url + "><\/script>")
+        }
+        function a() {
+            var url = './a.js?t=' + Math.random();
+            console.log(url)
+            // var url='./d.js?t='+ Math.random();
+            document.write("<script type='text/javascript' src=" + url + "><\/script>")
+        }
+    </script>
+
+
+</body>
+
+</html>
